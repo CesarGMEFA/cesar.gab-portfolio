@@ -1,0 +1,36 @@
+@use 'header';
+
+:root {
+  --fontPrimmary: 'Roboto', sans-serif;
+  --textColor: #ffffff;
+  --secundaryTextColor: #9ea6bc;
+  --titlesColor: #05d45f;
+  --extraBold: 900;
+  --standardWeight: 500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  color: var(--textColor);
+  font-size: 62.5%;
+  font-family: var(--fontPrimmary);
+  font-weight: var(--standardWeight);
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--secundaryTextColor);
+  text-decoration: none;
+}
