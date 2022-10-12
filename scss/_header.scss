@@ -66,12 +66,12 @@
     a {
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--titlesColor);
-      background-color: var(--bg);
-    }
-    a:hover {
       color: var(--bg);
       background-color: var(--titlesColor);
+    }
+    a:hover {
+      color: var(--titlesColor);
+      background-color: var(--bg);
     }
   }
 }
