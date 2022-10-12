@@ -1,0 +1,69 @@
+@use 'mixins' as m;
+
+main {
+  padding: 3rem 2rem;
+  background-color: var(--bg);
+
+  h2 {
+    text-align: center;
+  }
+  .subtitles {
+    margin-top: 4rem;
+  }
+
+  section {
+    @include m.flexRow(center, center);
+    flex-wrap: wrap;
+  }
+
+  article {
+    margin: 20px;
+    text-align: center;
+
+    p {
+      margin-top: 5px;
+    }
+  }
+
+  .nextjs {
+    img {
+      height: 80px;
+    }
+  }
+}
+
+.projects {
+  &_article {
+    padding-bottom: 20px;
+    border: 2px solid white;
+    img {
+      width: 290px;
+    }
+    &_text {
+      width: 290px;
+      height: 9rem;
+      padding: 10px;
+      text-align: start;
+      a {
+        color: var(--titlesColor);
+        text-decoration: underline;
+      }
+      a:hover {
+        color: var(--textColor);
+      }
+    }
+
+    .links {
+      margin-top: 10px;
+      padding: .5rem 1rem;
+      font-size: 1rem;
+      color: var(--titlesColor);
+      background-color: var(--bg);
+    }
+    .links:hover {
+      color: var(--bg);
+      background-color: var(--titlesColor);
+    }
+
+  }
+}

@@ -1,10 +1,12 @@
 @use 'header';
+@use 'main';
 
 :root {
   --fontPrimmary: 'Roboto', sans-serif;
   --textColor: #ffffff;
   --secundaryTextColor: #9ea6bc;
-  --titlesColor: #05d45f;
+  --titlesColor: #06fc71;
+  --bg: #1a1818;
   --extraBold: 900;
   --standardWeight: 500;
 }
@@ -34,3 +36,4 @@ a {
   color: var(--secundaryTextColor);
   text-decoration: none;
 }
+

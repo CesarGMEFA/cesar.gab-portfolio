@@ -1,0 +1,25 @@
+@mixin flexRow($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flexColumn($justify, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin linkstyle {
+  a {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: var(--titlesColor);
+    background-color: var(--bg);
+  }
+  a:hover {
+    color: var(--bg);
+    background-color: var(--titlesColor);
+  }
+}

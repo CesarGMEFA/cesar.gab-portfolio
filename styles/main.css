@@ -22,7 +22,9 @@
 }
 
 .header_content_nav {
+  padding: 0.5rem 0.8rem;
   color: var(--titlesColor);
+  background-color: var(--bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,17 +38,107 @@
   display: flex;
 }
 .header_content_nav ul li {
-  margin: 0 5px;
+  margin: 0 0.5rem;
 }
 .header_content_nav ul li a:hover {
   color: var(--titlesColor);
+}
+
+.header_content_info {
+  height: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header_content_info section h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.header_content_info section a {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--titlesColor);
+  background-color: var(--bg);
+}
+.header_content_info section a:hover {
+  color: var(--bg);
+  background-color: var(--titlesColor);
+}
+
+@media screen and (min-width: 530px) {
+  .header_content_info section {
+    margin-left: 3rem;
+  }
+  .header_content_info section h1 {
+    font-size: 5rem;
+  }
+}
+main {
+  padding: 3rem 2rem;
+  background-color: var(--bg);
+}
+main h2 {
+  text-align: center;
+}
+main .subtitles {
+  margin-top: 4rem;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main article {
+  margin: 20px;
+  text-align: center;
+}
+main article p {
+  margin-top: 5px;
+}
+main .nextjs img {
+  height: 80px;
+}
+
+.projects_article {
+  padding-bottom: 20px;
+  border: 2px solid white;
+}
+.projects_article img {
+  width: 290px;
+}
+.projects_article_text {
+  width: 290px;
+  height: 9rem;
+  padding: 10px;
+  text-align: start;
+}
+.projects_article_text a {
+  color: var(--titlesColor);
+  text-decoration: underline;
+}
+.projects_article_text a:hover {
+  color: var(--textColor);
+}
+.projects_article .links {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--titlesColor);
+  background-color: var(--bg);
+}
+.projects_article .links:hover {
+  color: var(--bg);
+  background-color: var(--titlesColor);
 }
 
 :root {
   --fontPrimmary: "Roboto", sans-serif;
   --textColor: #ffffff;
   --secundaryTextColor: #9ea6bc;
-  --titlesColor: #05d45f;
+  --titlesColor: #06fc71;
+  --bg: #1a1818;
   --extraBold: 900;
   --standardWeight: 500;
 }
