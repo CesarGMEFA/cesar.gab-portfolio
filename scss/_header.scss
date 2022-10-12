@@ -17,6 +17,7 @@
 
 .header_content_nav {
   width: 100%;
+  max-width: 1800px;
   padding: 1.5rem .8rem;
   color: var(--titlesColor);
   background-color: var(--bg);
@@ -70,6 +71,9 @@
 
 @media screen  and (min-width: 530px) {
   .header_content_nav {
+    p {
+      margin-left: 6rem;
+    }
     ul {
       margin-right: 6rem;
     }
