@@ -1,5 +1,6 @@
 @use 'header';
 @use 'main';
+@use 'footer';
 
 :root {
   --fontPrimmary: 'Roboto', sans-serif;
@@ -21,6 +22,7 @@ html {
   font-size: 62.5%;
   font-family: var(--fontPrimmary);
   font-weight: var(--standardWeight);
+  scroll-behavior: smooth;
 }
 
 body {

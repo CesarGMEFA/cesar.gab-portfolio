@@ -1,0 +1,63 @@
+@use 'mixins' as m;
+
+.footer {
+  padding: 4rem 3rem;
+  color: var(--bg);
+  background-color: var(--textColor);
+
+  h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  &_mailto {
+    color: var(--bg);
+  }
+  
+  &_social {
+    margin-top: 1rem;
+    a {
+      margin-right: 1rem;
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  &_formulario {
+    margin-top: 2rem;
+    @include m.flexColumn(start, center);
+    
+    h3 {
+      margin-bottom: 1rem;
+    }
+    
+    form {
+      width: 100%;
+      @include m.flexColumn(start, center);
+
+      textarea {
+        min-width: 280px;
+        width: 70%;
+        min-height: 160px;
+        padding: 1rem;
+        border: 3px solid var(--bg);
+        resize: vertical;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 1rem 3rem;
+        color: var(--titlesColor);
+        font-weight: var(--extraBold);
+        background-color: var(--bg);
+        cursor: pointer;
+      }
+      button:hover {
+        color: var(--bg);
+        background-color: var(--titlesColor);
+      }
+    }
+  }
+}

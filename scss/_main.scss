@@ -1,6 +1,6 @@
 @use 'mixins' as m;
 
-main {
+.main {
   padding: 3rem 2rem;
   background-color: var(--bg);
 
@@ -8,7 +8,7 @@ main {
     text-align: center;
   }
   .subtitles {
-    margin-top: 4rem;
+    padding-top: 6rem;
   }
 
   section {

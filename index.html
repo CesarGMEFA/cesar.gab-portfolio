@@ -14,14 +14,14 @@
 
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <div class="header_hero">
       <nav class="header_content_nav">
         <p>CG</p>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#jobs">Proyectos</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contacto">Contact</a></li>
         </ul>
       </nav>
       <section class="header_content_info">
@@ -34,11 +34,9 @@
       </section>
 
     </div>
-    <!-- <section class="header_content">
-    </section> -->
   </header>
 
-  <main>
+  <main class="main">
     <h2 class="subtitles">Herramientas y lenguajes</h2>
     <section class="tools">
       <article class="nextjs">
@@ -83,8 +81,8 @@
       </article>
     </section>
 
-    <h2 class="subtitles">Proyectos</h2>
-    <section class="projects" id="jobs">
+    <h2 class="subtitles" id="jobs">Proyectos</h2>
+    <section class="projects">
       <article class="projects_article">
         <img src="assets/images/sass-ladingpage.png" alt="imagen de una landing page">
         <p>Landing Page - SCSS</p>
@@ -191,11 +189,31 @@
         </a>
       </article>
     </section>
-    SITIO A&Uacute;N EN CONSTRUCCI&Oacute;N
   </main>
 
-  <footer>
+  <footer class="footer">
+    <h2 id="contacto">Contacto</h2>
+    <a href="mailto:cesarfar376@gmail.com" class="footer_mailto">
+      cesarfar376@gmail.com
+    </a>
+    <section class="footer_social">
+      <a href="https://www.linkedin.com/in/cesar-mejias-fa2002/" target="_blank">
+        <img src="assets/icons/linkedin.svg" alt="linkedin icon">
+      </a>
+      <a href="https://github.com/CesarGMEFA/" target="_blank">
+        <img src="assets/icons/github.svg" alt="github icon">
+      </a>
+    </section>
+    <section class="footer_formulario">
+      <h3>Enviame un mensaje</h3>
+      <form name="contact" netlify>
+        <textarea name="mensaje" placeholder="Escriba su mensaje aqu&iacute;..."></textarea>
+        <button type="submit">Enviar</button>
+        </form>
+  </section>
+  <section class="footer_final">
 
+  </section>
   </footer>
 </body>
 </html>

@@ -16,10 +16,13 @@
 
 
 .header_content_nav {
-  padding: .5rem .8rem;
+  width: 100%;
+  padding: 1.5rem .8rem;
   color: var(--titlesColor);
   background-color: var(--bg);
   @include m.flexRow(space-between, center);
+  position: fixed;
+  z-index: 10;
 
   p {
     font-weight: var(--extraBold);
@@ -31,7 +34,7 @@
     display: flex;
 
     li {
-      margin: 0 0.5rem;
+      margin-right: 2rem;
       a:hover {
         color: var(--titlesColor);
       }
@@ -46,7 +49,7 @@
   
   section {
     padding: 4rem;
-    background-color: black;
+    background-color: var(--bg);
     opacity: .9;
     h1 {
       font-size: 4rem;
@@ -66,9 +69,16 @@
 }
 
 @media screen  and (min-width: 530px) {
+  .header_content_nav {
+    ul {
+      margin-right: 6rem;
+    }
+  }
+
   .header_content_info {
     section {
       margin-left: 3rem;
+      margin-right: 3rem;
       h1 {
         font-size: 5rem;
       }
