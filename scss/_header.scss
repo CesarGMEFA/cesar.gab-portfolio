@@ -6,7 +6,7 @@
   
   &_hero {
     height: 100%;
-    background-image: url('../assets/heros-portfolio/pexels-uzunov-rostislav-4829745.jpg');
+    background-image: url('../assets/heros-portfolio/pexels-uzunov-rostislav-4829745.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -86,6 +86,30 @@
       h1 {
         font-size: 5rem;
       }
+    }
+  }
+}
+
+@media screen  and (min-width: 640px) {
+  .header {
+    &_hero {
+      background-image: url('../assets/heros-portfolio/1-pexels-uzunov-rostislav.webp');
+    }
+  }
+}
+
+@media screen  and (min-width: 1280px) {
+  .header {
+    &_hero {
+      background-image: url('../assets/heros-portfolio/2-pexels-uzunov-rostislav.webp');
+    }
+  }
+}
+
+@media screen  and (min-width: 1920px) {
+  .header {
+    &_hero {
+      background-image: url('../assets/heros-portfolio//3-pexels-uzunov-rostislav.webp');
     }
   }
 }
